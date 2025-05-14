@@ -6,9 +6,9 @@ services:
     startCommand: cd backend && node server.js
     envVars:
       - key: MONGO_URI
-        value: your_mongodb_atlas_connection_string
+        value: mongodb+srv://semestercse12:IBL5DCsFz9Rk20Ze@cluster0.2nj6ddw.mongodb.net/
       - key: JWT_SECRET
-        value: your_strong_jwt_secret
+        value: 47ef6b6ef0ae37bd4740d941aa63fd3e81d1665f32c2333fd72dadb103fde5495a1ed8358ce27d78a0087bde41013077f864eee3b6df4ddf3c2e426ce67ce4ea
       - key: PORT
         value: 5000
       - key: NODE_ENV
