@@ -14,10 +14,12 @@ services:
       - key: NODE_ENV
         value: production
 
-  - type: static
+  - type: web   # ❗ Change this from 'static' to 'web'
     name: auth-frontend
+    runtime: static
     buildCommand: cd frontend && npm install && npm run build
-    publishPath: ./frontend/build
+    staticPublishPath: frontend/build
     envVars:
       - key: REACT_APP_API_URL
         value: https://auth-backend.onrender.com
+
